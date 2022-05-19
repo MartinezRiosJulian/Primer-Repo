@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRODUCTOS</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="menu-container">
+      <ul class="menu-list sub">
+        <li class="menu-list-item">
+          <a class="" href="../index.html">INICIO</a>
+        </li>
+        <li class="menu-list-item">
+          <a class="" href="servicios.html">SERVICIOS</a>
+        </li>
+        <!-- <li class="menu-list-item">
+          <a class="">PRODUCTOS</a>
+        </li> -->
+        <li class="menu-list-item">
+          <a class="" href="nosotros.html">NOSOTROS</a>
+        </li>
+        <li class="menu-list-item">
+          <a class="" href="contacto.html">CONTACTO</a>
+        </li>
+      </ul>
+    </div>
+    <header>
+      <h1>PRODUCTOS</h1>
+    </header>
+    <div class="container">
+      <table class="tabla-productos">
+        <tr>
+          <th>Productos</th>
+          <td>Gorras</td>
+          <td>Stickers</td>
+          <td>Remeras</td>
+          <td>Tazas</td>
+        </tr>
+        <tr>
+          <th>Precio</th>
+          <td>100$</td>
+          <td>200$</td>
+          <td>300$</td>
+          <td>400$</td>
+        </tr>
+        <tr>
+          <th>Tamaños</th>
+          <td>S</td>
+          <td>M</td>
+          <td>L</td>
+          <td>XL</td>
+        </tr>
+      </table>
+
+      <div class="carrito-compra">
+        <form action="" id="carrito-compra-form">
+          <h2>Seleccione producto</h2>
+          <label for="productos">Producto:</label>
+          <select name="productos" id="">
+            <option value="gorras">Gorra SCH</option>
+            <option value="stickers">Sticker SCH</option>
+            <option value="remeras">Remera SCH</option>
+            <option value="tazas">Tazas SCH</option>
+          </select>
+
+          <label for="talles">Talle:</label>
+          <select name="talles" id="">
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+            <option value="XL">Extralarge</option>
+          </select>
+
+          <label for="precios">Precios:</label>
+          <select name="precios" id="">
+            <option value="precio100">100$</option>
+            <option value="precio200">200$</option>
+            <option value="precio300">300$</option>
+            <option value="precio400">400$</option>
+          </select>
+          <input class="boton" type="submit" value="Comprar" />
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <span>Copyright by Martinez Ríos, Alberto Julian</span>
+      </div>
+    </footer>
+  </body>
+</html>
