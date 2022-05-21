@@ -1,32 +1,12 @@
 /* ----VISTA DESKTOP---- */
 @media screen and (min-width: 980px) {
-  .grid-container {
+  main {
     display: grid;
-    grid-template-areas:
-      "header header header"
-      "nav nav nav"
-      "contenido contenido imagen"
-      "footer footer footer";
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0 auto;
+    grid-template-rows: repeat(3, 1fr);
     column-gap: 10px;
     row-gap: 10px;
     height: 100vh;
-  }
-  header {
-    grid-area: header;
-  }
-  nav {
-    grid-area: nav;
-  }
-  article {
-    grid-area: contenido;
-  }
-  div.imagen {
-    grid-area: imagen;
-  }
-  footer {
-    grid-area: footer;
   }
   * {
     margin: 0;
@@ -50,6 +30,10 @@
     background-color: #333;
     font-family: "Bebas Neue", cursive;
   }
+  section.container-servicios {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
   table {
     width: 100%;
     border-collapse: collapse;
@@ -60,6 +44,7 @@
   td {
     border: 3px solid black;
     font-family: "Teko", sans-serif;
+    padding: 6px;
   }
   td {
     text-align: center;
@@ -71,13 +56,18 @@
     padding: 0 6px;
   }
   h1,
-  h2 {
-    font-family: "Teko", sans-serif;
-    margin: 15px;
-    text-align: center;
-  }
+  h2,
   h3 {
-    margin: 15px;
+    font-family: "Teko", sans-serif;
+    padding: 10px;
+    /* text-align: center; */
+  }
+  p.detalle-servicio {
+    padding: 10px;
+  }
+
+  p {
+    font-family: "Teko", sans-serif;
   }
   span {
     text-align: center;
@@ -87,6 +77,12 @@
     width: 100%;
     margin: auto;
     text-align: center;
+    height: 0;
+  }
+  .menu-container {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin: 10px 0;
   }
   .menu-list {
     display: flex;
@@ -104,7 +100,7 @@
   .logo-container {
     position: relative;
     top: 36px;
-    z-index: 99999;
+    /* z-index: 99999; */
   }
   .menu-list .menu-list-item {
     padding: 15px;
@@ -136,7 +132,27 @@
   .container-servicios {
     font-family: "Teko", sans-serif;
   }
-
+  .container-productos {
+    grid-column: 1/4;
+    grid-row: 2/4;
+    margin: 12px;
+  }
+  .container-nosotros {
+    grid-column: 1/4;
+    grid-row: 2/4;
+  }
+  .container-contacto {
+    grid-column: 1/4;
+    grid-row: 2/4;
+    padding: 10px;
+  }
+  .titulo {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .container-nosotros {
+    padding: 10px;
+  }
   .boton {
     background-color: rgba(236, 108, 44, 1);
     border-radius: 15%;
@@ -144,13 +160,22 @@
     margin: 8px;
     cursor: pointer;
   }
-  .container,
+  .container-index {
+    grid-column: 1/3;
+    grid-row: 2/4;
+  }
+  .container-index,
   .imagen {
     font-family: "Teko", sans-serif;
     margin: 15px;
     padding: 8px;
   }
+  .redes-sociales {
+    font-family: "Teko", sans-serif;
+  }
   .imagen {
+    grid-column: 3/4;
+    grid-row: 2/3;
     display: flex;
     justify-items: center;
     align-items: center;
@@ -191,9 +216,6 @@
     border-radius: 50%;
     border: 5px solid #ffff;
   }
-  /* .menu-container{
-    grid-column: 2;
-  } */
   .menu-list {
     grid-column: 2/-4;
     display: flex;
