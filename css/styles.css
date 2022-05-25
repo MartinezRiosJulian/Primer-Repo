@@ -1,5 +1,7 @@
 /* -----VISTA MOBILE----- */
-@media screen and (min-width: 768px) and (max-width: 980px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* -------GENERAL------ */
+
   main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -49,18 +51,18 @@
   td {
     text-align: center;
   }
-  label {
+  /* label {
     border: 3px solid black;
     font-family: "Teko", sans-serif;
     margin: 6px;
     padding: 0 6px;
-  }
+  } */
   h1,
   h2,
   h3 {
     font-family: "Teko", sans-serif;
     padding: 10px;
-   }
+  }
   p.detalle-servicio {
     padding: 10px;
   }
@@ -71,38 +73,70 @@
   span {
     text-align: center;
   }
-  .logo-container,
-  .menu-container {
+  /* ------BARRA DE NAVEGACION------ */
+
+  .ul-h {
+    display: none;
+  }
+  .menu-container-h input:checked ~ ul {
+    display: block;
+  }
+  .menu-container-h input {
+    display: none;
+  }
+  .menu-imagen {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+  }
+  /* Estilo del boton cuando se pasa el mouse por encima*/
+  .menu-imagen:hover {
+    background: grey;
+  }
+  /* Estilo del boton cuando el menú está expandido*/
+  .menu-container-h input:checked ~ label {
+    background: lightgrey;
+  }
+  .ul-h {
+    margin-top: 0;
+    padding: 0;
+    width: 200px;
+  }
+  .menu-list-h {
+    display: block;
+    background: #333;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid #ffffff;
+    font-family: "Bebas Neue", cursive;
+
+  }
+  /*Estilo cuando el mouse pasa encima de cada link del menu*/
+  .menu-list-h:hover {
+    filter: brightness(110%);
+  }
+  .ul-h .menu-list-h a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .logo-container {
     width: 100%;
     margin: auto;
     text-align: center;
     height: 0;
   }
-  .menu-container {
-    grid-column: 1/4;
-    grid-row: 1/2;
-    margin: 10px 0;
-  }
-  .menu-list {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    background-color: #333;
-    overflow: hidden;
-    cursor: pointer;
-    font-family: "Bebas Neue", cursive;
-  }
-  .menu-list-item {
-    text-decoration: none;
-    list-style-type: none;
-  }
+
   .logo-container {
     position: relative;
     top: 36px;
-  }
-  .menu-list .menu-list-item {
-    padding: 15px;
-    width: 22%;
   }
   .logo-sch {
     border-radius: 50%;
@@ -110,18 +144,11 @@
     height: 80px;
     width: 80px;
   }
+  .menu-container {
+    display: none;
+  }
 
-  .menu-list .menu-list-item:hover a {
-    color: rgba(40, 117, 201, 1);
-    font-weight: bold;
-  }
-  .menu-list .menu-list-item a {
-    text-decoration: none;
-    color: #ffffff;
-  }
-  .menu-list .menu-list-item:hover {
-    background-color: rgba(236, 108, 44, 1);
-  }
+  /* ------CONTENIDO------- */
 
   .footer-container {
     color: #ffffff;
@@ -134,12 +161,12 @@
   }
   .container-productos {
     grid-column: 1/4;
-    grid-row: 2/4;
+    grid-row: 2/3;
     margin: 12px;
   }
   .container-nosotros {
     grid-column: 1/4;
-    grid-row: 2/4;
+    grid-row: 2/3;
   }
   .container-contacto {
     grid-column: 1/4;
@@ -182,7 +209,7 @@
   }
 }
 /* ----VISTA DESKTOP---- */
-@media screen and (min-width: 981px) {
+@media screen and (min-width: 992px) and (max-width: 1400px) {
   main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -197,7 +224,7 @@
   }
   html,
   body {
-    font-size: 18px;
+    font-size: 16px ;
     height: 100%;
     background: linear-gradient(
       to bottom,
@@ -233,7 +260,7 @@
     text-align: center;
   }
   label {
-    border: 3px solid black;
+    /* border: 3px solid black; */
     font-family: "Teko", sans-serif;
     margin: 6px;
     padding: 0 6px;
@@ -242,10 +269,10 @@
   h2,
   h3 {
     font-family: "Teko", sans-serif;
-    padding: 10px;
+    padding: 8px;
   }
   p.detalle-servicio {
-    padding: 10px;
+    padding: 8px;
   }
 
   p {
@@ -303,6 +330,9 @@
   .menu-list .menu-list-item:hover {
     background-color: rgba(236, 108, 44, 1);
   }
+  .menu-container-h {
+    display: none;
+  }
 
   .footer-container {
     color: #ffffff;
@@ -315,16 +345,16 @@
   }
   .container-productos {
     grid-column: 1/4;
-    grid-row: 2/4;
+    grid-row: 2/3;
     margin: 12px;
   }
   .container-nosotros {
     grid-column: 1/4;
-    grid-row: 2/4;
+    grid-row: 2/3;
   }
   .container-contacto {
     grid-column: 1/4;
-    grid-row: 2/4;
+    grid-row: 2/3;
     padding: 10px;
   }
   .titulo {
