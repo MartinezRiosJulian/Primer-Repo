@@ -28,7 +28,7 @@
     bottom: 0;
     width: 100%;
     position: absolute;
-    padding: 20px 0;
+    padding: 12px 0;
     background-color: #333;
     font-family: "Bebas Neue", cursive;
   }
@@ -51,12 +51,6 @@
   td {
     text-align: center;
   }
-  /* label {
-    border: 3px solid black;
-    font-family: "Teko", sans-serif;
-    margin: 6px;
-    padding: 0 6px;
-  } */
   h1,
   h2,
   h3 {
@@ -96,16 +90,16 @@
     text-align: center;
     user-select: none;
   }
-  /* Estilo del boton cuando se pasa el mouse por encima*/
+
   .menu-imagen:hover {
     background: grey;
   }
-  /* Estilo del boton cuando el menú está expandido*/
+
   .menu-container-h input:checked ~ label {
     background: lightgrey;
   }
   .ul-h {
-    margin-top: 0;
+    position: absolute;
     padding: 0;
     width: 200px;
   }
@@ -117,9 +111,8 @@
     list-style: none;
     border-bottom: 1px solid #ffffff;
     font-family: "Bebas Neue", cursive;
-
   }
-  /*Estilo cuando el mouse pasa encima de cada link del menu*/
+
   .menu-list-h:hover {
     filter: brightness(110%);
   }
@@ -133,16 +126,14 @@
     text-align: center;
     height: 0;
   }
-
-  .logo-container {
-    position: relative;
-    top: 36px;
-  }
   .logo-sch {
     border-radius: 50%;
     border: 5px solid #ffff;
     height: 80px;
     width: 80px;
+    position: absolute;
+    top: 36px;
+    right: 12%;
   }
   .menu-container {
     display: none;
@@ -179,13 +170,6 @@
   }
   .container-nosotros {
     padding: 10px;
-  }
-  .boton {
-    background-color: rgba(236, 108, 44, 1);
-    border-radius: 15%;
-    padding: 8px;
-    margin: 8px;
-    cursor: pointer;
   }
   .container-index {
     grid-column: 1/3;
@@ -224,7 +208,7 @@
   }
   html,
   body {
-    font-size: 16px ;
+    font-size: 16px;
     height: 100%;
     background: linear-gradient(
       to bottom,
@@ -236,7 +220,7 @@
     bottom: 0;
     width: 100%;
     position: absolute;
-    padding: 20px 0;
+    padding: 12px 0;
     background-color: #333;
     font-family: "Bebas Neue", cursive;
   }
@@ -364,13 +348,6 @@
   .container-nosotros {
     padding: 10px;
   }
-  .boton {
-    background-color: rgba(236, 108, 44, 1);
-    border-radius: 15%;
-    padding: 8px;
-    margin: 8px;
-    cursor: pointer;
-  }
   .container-index {
     grid-column: 1/3;
     grid-row: 2/4;
@@ -391,4 +368,13 @@
     justify-items: center;
     align-items: center;
   }
+}
+@keyframes shake {
+  25%{transform: translateX(5px);}
+  50%{transform: translateX(-6px);}
+  75%{transform: translateX(5px);}
+}
+
+input:invalid {
+  animation: shake .5s;
 }
