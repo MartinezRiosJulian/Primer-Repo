@@ -1,380 +1,228 @@
-/* -----VISTA MOBILE----- */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  /* -------GENERAL------ */
+@import url("https://fonts.googleapis.com/css2?family=Teko&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
 
-  main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    column-gap: 10px;
-    row-gap: 10px;
-    height: 100vh;
-  }
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  html,
-  body {
-    font-size: auto;
-    height: 100%;
-    background: linear-gradient(
-      to bottom,
-      rgba(236, 108, 44, 1),
-      rgba(40, 117, 201, 1)
-    );
-  }
-  footer {
-    bottom: 0;
-    width: 100%;
-    position: absolute;
-    padding: 12px 0;
-    background-color: #333;
-    font-family: "Bebas Neue", cursive;
-  }
-  section.container-servicios {
-    grid-column: 1/4;
-    grid-row: 2/3;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 3px solid black;
-  }
-  tr,
-  th,
-  td {
-    border: 3px solid black;
-    font-family: "Teko", sans-serif;
-    padding: 6px;
-  }
-  td {
-    text-align: center;
-  }
-  h1,
-  h2,
-  h3 {
-    font-family: "Teko", sans-serif;
-    padding: 10px;
-  }
-  p.detalle-servicio {
-    padding: 10px;
-  }
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  html {
+    height: 100%; }
+    html body {
+      height: 100%;
+      background: linear-gradient(to bottom, #ec6c2c, #2875c9); }
+    html .section .logo-container {
+      width: 100%;
+      text-align: end;
+      height: 0;
+      position: absolute;
+      right: 86px;
+      top: 36px; }
+    html .section .logo-sch {
+      border-radius: 50%;
+      border: 5px solid #ffff;
+      height: 80px;
+      width: 80px; }
+    html .main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      column-gap: 10px;
+      row-gap: 10px;
+      height: 100vh; }
+      html .main .menu-container {
+        display: none; }
+      html .main .menu-container-h input {
+        display: none; }
+      html .main .menu-container-h input:checked ~ ul {
+        display: block; }
+      html .main .menu-container-h input:checked ~ label {
+        background: lightgrey; }
+      html .main .menu-list-h {
+        display: block;
+        background: #333;
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+        border-bottom: 1px solid #ffffff;
+        font-family: "Bebas Neue", cursive; }
+      html .main .menu-list-h:hover {
+        filter: brightness(110%); }
+      html .main .ul-h .menu-list-h a {
+        text-decoration: none;
+        color: #ffffff; }
+      html .main .ul-h {
+        position: absolute;
+        padding: 0;
+        width: 200px;
+        display: none; }
+      html .main .ul-h .menu-list-h a {
+        text-decoration: none;
+        color: #ffffff; }
+      html .main .menu-imagen {
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none; }
+      html .main .menu-imagen:hover {
+        background: grey; }
+      html .main .container-index {
+        grid-column: 1/3;
+        grid-row: 2/4; }
+      html .main .container-index,
+      html .main .imagen {
+        font-family: "Teko", sans-serif;
+        margin: 15px;
+        padding: 8px; }
+      html .main .logo-sch-2 {
+        border-radius: 50%;
+        border: 5px solid #ffffff; }
+      html .main .imagen {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-items: center;
+        align-items: center; }
+      html .main .footer {
+        bottom: 0;
+        width: 100%;
+        position: absolute;
+        padding: 12px 0;
+        background-color: #333;
+        font-family: "Bebas Neue", cursive; }
+        html .main .footer .footer-container {
+          color: #ffffff;
+          font-size: 1, 5rem;
+          text-align: center; } }
 
-  p {
-    font-family: "Teko", sans-serif;
-  }
-  span {
-    text-align: center;
-  }
-  /* ------BARRA DE NAVEGACION------ */
-
-  .ul-h {
-    display: none;
-  }
-  .menu-container-h input:checked ~ ul {
-    display: block;
-  }
-  .menu-container-h input {
-    display: none;
-  }
-  .menu-imagen {
-    box-sizing: border-box;
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-weight: bold;
-    text-align: center;
-    user-select: none;
-  }
-
-  .menu-imagen:hover {
-    background: grey;
-  }
-
-  .menu-container-h input:checked ~ label {
-    background: lightgrey;
-  }
-  .ul-h {
-    position: absolute;
-    padding: 0;
-    width: 200px;
-  }
-  .menu-list-h {
-    display: block;
-    background: #333;
-    margin: 0;
-    padding: 10px;
-    list-style: none;
-    border-bottom: 1px solid #ffffff;
-    font-family: "Bebas Neue", cursive;
-  }
-
-  .menu-list-h:hover {
-    filter: brightness(110%);
-  }
-  .ul-h .menu-list-h a {
-    text-decoration: none;
-    color: #ffffff;
-  }
-  .logo-container {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    height: 0;
-  }
-  .logo-sch {
-    border-radius: 50%;
-    border: 5px solid #ffff;
-    height: 80px;
-    width: 80px;
-    position: absolute;
-    top: 36px;
-    right: 12%;
-  }
-  .menu-container {
-    display: none;
-  }
-
-  /* ------CONTENIDO------- */
-
-  .footer-container {
-    color: #ffffff;
-    font-size: 1, 5rem;
-    text-align: center;
-  }
-
-  .container-servicios {
-    font-family: "Teko", sans-serif;
-  }
-  .container-productos {
-    grid-column: 1/4;
-    grid-row: 2/3;
-    margin: 12px;
-  }
-  .container-nosotros {
-    grid-column: 1/4;
-    grid-row: 2/3;
-  }
-  .container-contacto {
-    grid-column: 1/4;
-    grid-row: 2/3;
-    padding: 10px;
-  }
-  .titulo {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .container-nosotros {
-    padding: 10px;
-  }
-  .container-index {
-    grid-column: 1/3;
-    grid-row: 2/4;
-  }
-  .container-index,
-  .imagen {
-    font-family: "Teko", sans-serif;
-    margin: 15px;
-    padding: 8px;
-  }
-  .redes-sociales {
-    font-family: "Teko", sans-serif;
-  }
-  .imagen {
-    grid-column: 3/4;
-    grid-row: 2/3;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-  }
-}
-/* ----VISTA DESKTOP---- */
 @media screen and (min-width: 992px) and (max-width: 1400px) {
-  main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    column-gap: 10px;
-    row-gap: 10px;
-    height: 100vh;
-  }
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  html,
-  body {
-    font-size: 16px;
-    height: 100%;
-    background: linear-gradient(
-      to bottom,
-      rgba(236, 108, 44, 1),
-      rgba(40, 117, 201, 1)
-    );
-  }
-  footer {
-    bottom: 0;
-    width: 100%;
-    position: absolute;
-    padding: 12px 0;
-    background-color: #333;
-    font-family: "Bebas Neue", cursive;
-  }
-  section.container-servicios {
-    grid-column: 1/4;
-    grid-row: 2/3;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 3px solid black;
-  }
-  tr,
-  th,
-  td {
-    border: 3px solid black;
-    font-family: "Teko", sans-serif;
-    padding: 6px;
-  }
-  td {
-    text-align: center;
-  }
-  label {
-    /* border: 3px solid black; */
-    font-family: "Teko", sans-serif;
-    margin: 6px;
-    padding: 0 6px;
-  }
-  h1,
-  h2,
-  h3 {
-    font-family: "Teko", sans-serif;
-    padding: 8px;
-  }
-  p.detalle-servicio {
-    padding: 8px;
-  }
-
-  p {
-    font-family: "Teko", sans-serif;
-  }
-  span {
-    text-align: center;
-  }
-  .logo-container,
-  .menu-container {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    height: 0;
-  }
-  .menu-container {
-    grid-column: 1/4;
-    grid-row: 1/2;
-    margin: 10px 0;
-  }
-  .menu-list {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    background-color: #333;
-    overflow: hidden;
-    cursor: pointer;
-    font-family: "Bebas Neue", cursive;
-  }
-  .menu-list-item {
-    text-decoration: none;
-    list-style-type: none;
-  }
-  .logo-container {
-    position: relative;
-    top: 36px;
-  }
-  .menu-list .menu-list-item {
-    padding: 15px;
-    width: 22%;
-  }
-  .logo-sch {
-    border-radius: 50%;
-    border: 5px solid #ffff;
-  }
-
-  .menu-list .menu-list-item:hover a {
-    color: rgba(40, 117, 201, 1);
-    font-weight: bold;
-  }
-  .menu-list .menu-list-item a {
-    text-decoration: none;
-    color: #ffffff;
-  }
-  .menu-list .menu-list-item:hover {
-    background-color: rgba(236, 108, 44, 1);
-  }
-  .menu-container-h {
-    display: none;
-  }
-
-  .footer-container {
-    color: #ffffff;
-    font-size: 1, 5rem;
-    text-align: center;
-  }
-
-  .container-servicios {
-    font-family: "Teko", sans-serif;
-  }
-  .container-productos {
-    grid-column: 1/4;
-    grid-row: 2/3;
-    margin: 12px;
-  }
-  .container-nosotros {
-    grid-column: 1/4;
-    grid-row: 2/3;
-  }
-  .container-contacto {
-    grid-column: 1/4;
-    grid-row: 2/3;
-    padding: 10px;
-  }
-  .titulo {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .container-nosotros {
-    padding: 10px;
-  }
-  .container-index {
-    grid-column: 1/3;
-    grid-row: 2/4;
-  }
-  .container-index,
-  .imagen {
-    font-family: "Teko", sans-serif;
-    margin: 15px;
-    padding: 8px;
-  }
-  .redes-sociales {
-    font-family: "Teko", sans-serif;
-  }
-  .imagen {
-    grid-column: 3/4;
-    grid-row: 2/3;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-  }
-}
-@keyframes shake {
-  25%{transform: translateX(5px);}
-  50%{transform: translateX(-6px);}
-  75%{transform: translateX(5px);}
-}
-
-input:invalid {
-  animation: shake .5s;
-}
+  html {
+    height: 100%; }
+    html body {
+      height: 100%;
+      background: linear-gradient(to bottom, #ec6c2c, #2875c9); }
+    html .section .logo-container {
+      width: 100%;
+      text-align: center;
+      height: 0;
+      position: absolute;
+      top: 36px; }
+    html .section .logo-sch {
+      border-radius: 50%;
+      border: 5px solid #ffff;
+      height: 80px;
+      width: 80px; }
+    html .main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      column-gap: 10px;
+      row-gap: 10px;
+      height: 100vh; }
+      html .main .logo-container,
+      html .main .menu-container {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        height: 0; }
+      html .main .menu-container {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        margin: 10px 0; }
+      html .main .menu-list {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        background-color: #333;
+        overflow: hidden;
+        cursor: pointer;
+        font-family: "Bebas Neue", cursive; }
+      html .main .menu-list-item {
+        text-decoration: none;
+        list-style-type: none; }
+      html .main .menu-list .menu-list-item {
+        padding: 15px;
+        width: 22%; }
+      html .main .menu-list .menu-list-item:hover a {
+        color: #2875c9;
+        font-weight: bold; }
+      html .main .menu-list .menu-list-item a {
+        text-decoration: none;
+        color: #ffffff; }
+      html .main .menu-list .menu-list-item:hover {
+        background-color: #ec6c2c; }
+      html .main .menu-container-h {
+        display: none; }
+        html .main .menu-container-h .menu-container-h input {
+          display: none; }
+        html .main .menu-container-h .menu-container-h input:checked ~ ul {
+          display: block; }
+        html .main .menu-container-h .menu-container-h input:checked ~ label {
+          background: lightgrey; }
+        html .main .menu-container-h .menu-list-h {
+          display: block;
+          background: #333;
+          margin: 0;
+          padding: 10px;
+          list-style: none;
+          border-bottom: 1px solid #ffffff;
+          font-family: "Bebas Neue", cursive; }
+        html .main .menu-container-h .menu-list-h:hover {
+          filter: brightness(110%); }
+        html .main .menu-container-h .ul-h .menu-list-h a {
+          text-decoration: none;
+          color: #ffffff; }
+        html .main .menu-container-h .ul-h {
+          position: absolute;
+          padding: 0;
+          width: 200px;
+          display: none; }
+        html .main .menu-container-h .ul-h .menu-list-h a {
+          text-decoration: none;
+          color: #ffffff; }
+        html .main .menu-container-h .menu-imagen {
+          box-sizing: border-box;
+          display: inline-block;
+          border: 1px solid black;
+          border-radius: 5px;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          font-weight: bold;
+          text-align: center;
+          user-select: none; }
+        html .main .menu-container-h .menu-imagen:hover {
+          background: grey; }
+      html .main .container-index {
+        grid-column: 1/3;
+        grid-row: 2/4; }
+      html .main .container-index,
+      html .main .imagen {
+        font-family: "Teko", sans-serif;
+        margin: 15px;
+        padding: 8px; }
+      html .main .logo-sch-2 {
+        border-radius: 50%;
+        border: 5px solid #ffffff; }
+      html .main .imagen {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-items: center;
+        align-items: center; }
+    html .footer {
+      bottom: 0;
+      width: 100%;
+      position: absolute;
+      padding: 12px 0;
+      background-color: #333;
+      font-family: "Bebas Neue", cursive; }
+      html .footer .footer-container {
+        color: #ffffff;
+        font-size: 1, 5rem;
+        text-align: center; } }
