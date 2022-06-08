@@ -16,7 +16,7 @@
       height: 0;
       position: absolute;
       right: 86px;
-      top: 36px; }
+      top: 16px; }
     html .section .logo-sch {
       border-radius: 50%;
       border: 5px solid #ffff;
@@ -24,13 +24,15 @@
       width: 80px; }
     html .main {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
       column-gap: 10px;
       row-gap: 10px;
       height: 100vh; }
       html .main .menu-container {
         display: none; }
+      html .main .menu-container-h {
+        margin: 20px; }
       html .main .menu-container-h input {
         display: none; }
       html .main .menu-container-h input:checked ~ ul {
@@ -49,22 +51,23 @@
         filter: brightness(110%); }
       html .main .ul-h .menu-list-h a {
         text-decoration: none;
-        color: #ffffff; }
+        color: #ffff; }
       html .main .ul-h {
         position: absolute;
         padding: 0;
+        margin: 0 10px;
         width: 200px;
         display: none; }
       html .main .ul-h .menu-list-h a {
         text-decoration: none;
-        color: #ffffff; }
+        color: #ffff; }
       html .main .menu-imagen {
         box-sizing: border-box;
         display: inline-block;
         border: 1px solid black;
         border-radius: 5px;
-        width: 30px;
         height: 30px;
+        width: 30px;
         line-height: 30px;
         font-weight: bold;
         text-align: center;
@@ -72,33 +75,101 @@
       html .main .menu-imagen:hover {
         background: grey; }
       html .main .container-index {
-        grid-column: 1/3;
-        grid-row: 2/4; }
+        grid-column: 1/5;
+        grid-row: 2/3; }
       html .main .container-index,
       html .main .imagen {
         font-family: "Teko", sans-serif;
-        margin: 15px;
-        padding: 8px; }
+        margin: 10px;
+        padding: 10px; }
       html .main .logo-sch-2 {
         border-radius: 50%;
-        border: 5px solid #ffffff; }
+        border: 5px solid #ffff; }
       html .main .imagen {
-        grid-column: 3/4;
-        grid-row: 2/3;
+        grid-column: 4/5;
+        grid-row: 3/4;
         display: flex;
         justify-items: center;
         align-items: center; }
-      html .main .footer {
-        bottom: 0;
-        width: 100%;
-        position: absolute;
-        padding: 12px 0;
-        background-color: #333;
-        font-family: "Bebas Neue", cursive; }
-        html .main .footer .footer-container {
-          color: #ffffff;
-          font-size: 1, 5rem;
-          text-align: center; } }
+      html .main .container-servicios {
+        grid-column: 1/5;
+        grid-row: 3/4;
+        padding: 10px;
+        margin: 10px;
+        font-family: "Teko", sans-serif; }
+      html .main .container-productos {
+        grid-column: 1/5;
+        grid-row: 2/3;
+        padding: 10px;
+        margin: 10px;
+        font-family: "Teko", sans-serif; }
+        html .main .container-productos .carrito-compra label {
+          padding: 10px; }
+        html .main .container-productos .carrito-compra .btn {
+          margin: 10px; }
+      html .main .container-nosotros {
+        grid-column: 1/5;
+        grid-row: 2/3;
+        font-family: "Teko", sans-serif;
+        padding: 10px;
+        margin: 10px; }
+      html .main .container-contacto {
+        grid-column: 1/5;
+        grid-row: 2/3;
+        padding: 10px;
+        margin: 10px;
+        font-family: "Teko", sans-serif; }
+        html .main .container-contacto .formulario-contacto label {
+          padding: 10px; }
+        html .main .container-contacto .formulario-contacto .btn {
+          margin: 10px; }
+      html .main .lista-contacto {
+        grid-column: 1/5;
+        grid-row: 3/4;
+        padding: 12px;
+        margin: 12px;
+        font-family: "Teko", sans-serif; }
+        html .main .lista-contacto .redes-sociales {
+          display: flex;
+          justify-content: space-around;
+          text-align: center;
+          overflow: hidden;
+          cursor: pointer;
+          font-family: "Bebas Neue", cursive; }
+        html .main .lista-contacto .lista-redes {
+          list-style: none;
+          text-decoration: none;
+          border-radius: 12%; }
+        html .main .lista-contacto .redes-sociales .lista-redes {
+          padding: 10px;
+          width: 12%;
+          height: 12%; }
+        html .main .lista-contacto .redes-sociales .lista-redes a {
+          text-decoration: none;
+          color: #000; }
+        html .main .lista-contacto .redes-sociales .lista-redes:hover a {
+          color: #ffff;
+          font-weight: bold; }
+        html .main .lista-contacto .redes-sociales .lista-redes2:hover {
+          background-color: #E1306C; }
+        html .main .lista-contacto .redes-sociales .lista-redes3:hover {
+          background-color: #DB4437; }
+        html .main .lista-contacto .redes-sociales .lista-redes1:hover {
+          background-color: #20bd59; }
+        html .main .lista-contacto .logos {
+          height: 45px;
+          width: 45px; }
+    html .footer {
+      bottom: 0;
+      width: 100%;
+      position: absolute;
+      padding: 10px 0;
+      background-color: #333;
+      font-family: "Bebas Neue", cursive; }
+      html .footer .footer-container {
+        color: #ffff;
+        font-size: 1, 5rem;
+        text-align: center; } }
 
 @media screen and (min-width: 992px) and (max-width: 1400px) {
   html {
@@ -119,43 +190,43 @@
       width: 80px; }
     html .main {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
       column-gap: 10px;
       row-gap: 10px;
       height: 100vh; }
-      html .main .logo-container,
       html .main .menu-container {
-        width: 100%;
-        margin: auto;
-        text-align: center;
-        height: 0; }
-      html .main .menu-container {
-        grid-column: 1/4;
+        grid-column: 1/5;
         grid-row: 1/2;
         margin: 10px 0; }
-      html .main .menu-list {
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        background-color: #333;
-        overflow: hidden;
-        cursor: pointer;
-        font-family: "Bebas Neue", cursive; }
-      html .main .menu-list-item {
-        text-decoration: none;
-        list-style-type: none; }
-      html .main .menu-list .menu-list-item {
-        padding: 15px;
-        width: 22%; }
-      html .main .menu-list .menu-list-item:hover a {
-        color: #2875c9;
-        font-weight: bold; }
-      html .main .menu-list .menu-list-item a {
-        text-decoration: none;
-        color: #ffffff; }
-      html .main .menu-list .menu-list-item:hover {
-        background-color: #ec6c2c; }
+        html .main .menu-container .logo-container,
+        html .main .menu-container .menu-container {
+          width: 100%;
+          margin: auto;
+          text-align: center;
+          height: 0; }
+        html .main .menu-container .menu-list {
+          display: flex;
+          justify-content: space-around;
+          text-align: center;
+          background-color: #333;
+          overflow: hidden;
+          cursor: pointer;
+          font-family: "Bebas Neue", cursive; }
+        html .main .menu-container .menu-list-item {
+          text-decoration: none;
+          list-style-type: none; }
+        html .main .menu-container .menu-list .menu-list-item {
+          padding: 12px;
+          width: 22%; }
+        html .main .menu-container .menu-list .menu-list-item:hover a {
+          color: #2875c9;
+          font-weight: bold; }
+        html .main .menu-container .menu-list .menu-list-item a {
+          text-decoration: none;
+          color: #ffff; }
+        html .main .menu-container .menu-list .menu-list-item:hover {
+          background-color: #ec6c2c; }
       html .main .menu-container-h {
         display: none; }
         html .main .menu-container-h .menu-container-h input {
@@ -199,30 +270,98 @@
         html .main .menu-container-h .menu-imagen:hover {
           background: grey; }
       html .main .container-index {
-        grid-column: 1/3;
-        grid-row: 2/4; }
+        grid-column: 1/5;
+        grid-row: 2/3; }
       html .main .container-index,
       html .main .imagen {
         font-family: "Teko", sans-serif;
-        margin: 15px;
-        padding: 8px; }
+        padding: 12px;
+        margin: 12px; }
       html .main .logo-sch-2 {
         border-radius: 50%;
-        border: 5px solid #ffffff; }
+        border: 5px solid #ffff; }
       html .main .imagen {
-        grid-column: 3/4;
-        grid-row: 2/3;
+        grid-column: 4/5;
+        grid-row: 3/4;
         display: flex;
         justify-items: center;
         align-items: center; }
+      html .main .container-servicios {
+        grid-column: 1/5;
+        grid-row: 2/4;
+        padding: 12px;
+        margin: 12px;
+        font-family: "Teko", sans-serif; }
+      html .main .container-productos {
+        grid-column: 1/5;
+        grid-row: 2/4;
+        padding: 12px;
+        margin: 12px;
+        font-family: "Teko", sans-serif; }
+        html .main .container-productos .carrito-compra label {
+          padding: 12px; }
+        html .main .container-productos .carrito-compra .btn {
+          margin: 12px; }
+      html .main .container-nosotros {
+        grid-column: 1/5;
+        grid-row: 2/4;
+        padding: 12px;
+        margin: 12px;
+        font-family: "Teko", sans-serif; }
+      html .main .container-contacto {
+        grid-column: 1/5;
+        grid-row: 2/3;
+        padding: 12px;
+        margin: 12px;
+        font-family: "Teko", sans-serif; }
+        html .main .container-contacto .formulario-contacto label {
+          padding: 12px; }
+        html .main .container-contacto .formulario-contacto .btn {
+          margin: 12px; }
+      html .main .lista-contacto {
+        grid-column: 1/5;
+        grid-row: 3/4;
+        padding: 12px;
+        margin: 12px;
+        font-family: "Teko", sans-serif; }
+        html .main .lista-contacto .redes-sociales {
+          display: flex;
+          justify-content: space-around;
+          text-align: center;
+          overflow: hidden;
+          cursor: pointer;
+          font-family: "Bebas Neue", cursive; }
+        html .main .lista-contacto .lista-redes {
+          list-style: none;
+          text-decoration: none;
+          border-radius: 12%; }
+        html .main .lista-contacto .redes-sociales .lista-redes {
+          padding: 10px;
+          width: 12%;
+          height: 12%; }
+        html .main .lista-contacto .redes-sociales .lista-redes a {
+          text-decoration: none;
+          color: #000; }
+        html .main .lista-contacto .redes-sociales .lista-redes:hover a {
+          color: #ffff;
+          font-weight: bold; }
+        html .main .lista-contacto .redes-sociales .lista-redes2:hover {
+          background-color: #E1306C; }
+        html .main .lista-contacto .redes-sociales .lista-redes3:hover {
+          background-color: #DB4437; }
+        html .main .lista-contacto .redes-sociales .lista-redes1:hover {
+          background-color: #20bd59; }
+        html .main .lista-contacto .logos {
+          height: 45px;
+          width: 45px; }
     html .footer {
       bottom: 0;
       width: 100%;
       position: absolute;
-      padding: 12px 0;
+      padding: 10px 0;
       background-color: #333;
       font-family: "Bebas Neue", cursive; }
       html .footer .footer-container {
-        color: #ffffff;
+        color: #ffff;
         font-size: 1, 5rem;
         text-align: center; } }
