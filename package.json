@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "root",
   "version": "1.0.0",
   "description": "",
@@ -293,6 +294,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css":"node-sass --include-path scss scss/style.scss css/styles.css",
     "watch-css":"nodemon -e sccss -x \"npm run build-css\""
+=======
+  "name": "roott",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --inlude-path scss scss/styles.scss css/styles.css",
+    "watch-css":"nodemon -e scss -x \"npm run build-css\""
+>>>>>>> sass1
   },
   "repository": {
     "type": "git",
@@ -303,5 +314,13 @@
   "bugs": {
     "url": "https://github.com/MartinezRiosJulian/SCH/issues"
   },
+<<<<<<< HEAD
   "homepage": "https://github.com/MartinezRiosJulian/SCH#readme"
+=======
+  "homepage": "https://github.com/MartinezRiosJulian/SCH#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+>>>>>>> sass1
 }
