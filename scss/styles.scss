@@ -124,27 +124,23 @@
             .container-index {
                 grid-column: 1/5;
                 grid-row: 2/3;
-            }
-
-            .container-index,
-            .imagen {
                 font-family: $font-text;
                 margin: $margin1;
                 padding: $padding1;
             }
 
-            .logo-sch-2 {
-                border-radius: 50%;
-                border: 5px solid $color-list;
+            #carouselExampleIndicators {
+                grid-column: 2/4;
+                grid-row: 3/4;
             }
 
-            .imagen {
-                grid-column: 4/5;
-                grid-row: 3/4;
-                display: flex;
-                justify-items: center;
-                align-items: center;
+            .carousel .carousel-item {
+                max-height: 300px;
+            }
 
+            .carousel-item img {
+                object-fit: cover;
+                max-height: 300px;
             }
 
             .container-servicios {
@@ -175,10 +171,28 @@
 
             .container-nosotros {
                 grid-column: 1/5;
-                grid-row: 2/3;
+                grid-row: 2/4;
+                padding: $padding2;
+                margin: $margin2;
                 font-family: $font-text;
-                padding: $padding1;
-                margin: $margin1;
+
+                .logo-sch-2 {
+                    border-radius: 50%;
+                    border: 5px solid $color-list;
+                }
+
+                .imagen {
+                    display: flex;
+                    justify-items: center;
+                    align-items: center;
+                }
+
+                .imagen2 {
+                    display: flex;
+                    justify-items: center;
+                    align-items: center;
+                }
+
             }
 
             .container-contacto {
@@ -439,26 +453,23 @@
             .container-index {
                 grid-column: 1/5;
                 grid-row: 2/3;
-            }
-
-            .container-index,
-            .imagen {
                 font-family: $font-text;
                 padding: $padding2;
                 margin: $margin2;
             }
 
-            .logo-sch-2 {
-                border-radius: 50%;
-                border: 5px solid $color-list;
+            #carouselExampleIndicators {
+                grid-column: 2/4;
+                grid-row: 3/4;
             }
 
-            .imagen {
-                grid-column: 4/5;
-                grid-row: 3/4;
-                display: flex;
-                justify-items: center;
-                align-items: center;
+            .carousel .carousel-item {
+                max-height: 300px;
+            }
+
+            .carousel-item img {
+                object-fit: cover;
+                max-height: 300px;
             }
 
             .container-servicios {
@@ -493,6 +504,24 @@
                 padding: $padding2;
                 margin: $margin2;
                 font-family: $font-text;
+
+                .logo-sch-2 {
+                    border-radius: 50%;
+                    border: 5px solid $color-list;
+                }
+
+                .imagen {
+                    display: flex;
+                    justify-items: center;
+                    align-items: center;
+                }
+
+                .imagen2 {
+                    display: flex;
+                    justify-items: center;
+                    align-items: center;
+                }
+
             }
 
             .container-contacto {

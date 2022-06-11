@@ -76,21 +76,18 @@
         background: grey; }
       html .main .container-index {
         grid-column: 1/5;
-        grid-row: 2/3; }
-      html .main .container-index,
-      html .main .imagen {
+        grid-row: 2/3;
         font-family: "Teko", sans-serif;
         margin: 10px;
         padding: 10px; }
-      html .main .logo-sch-2 {
-        border-radius: 50%;
-        border: 5px solid #ffff; }
-      html .main .imagen {
-        grid-column: 4/5;
-        grid-row: 3/4;
-        display: flex;
-        justify-items: center;
-        align-items: center; }
+      html .main #carouselExampleIndicators {
+        grid-column: 2/4;
+        grid-row: 3/4; }
+      html .main .carousel .carousel-item {
+        max-height: 300px; }
+      html .main .carousel-item img {
+        object-fit: cover;
+        max-height: 300px; }
       html .main .container-servicios {
         grid-column: 1/5;
         grid-row: 3/4;
@@ -109,10 +106,21 @@
           margin: 10px; }
       html .main .container-nosotros {
         grid-column: 1/5;
-        grid-row: 2/3;
-        font-family: "Teko", sans-serif;
-        padding: 10px;
-        margin: 10px; }
+        grid-row: 2/4;
+        padding: 12px;
+        margin: 12px;
+        font-family: "Teko", sans-serif; }
+        html .main .container-nosotros .logo-sch-2 {
+          border-radius: 50%;
+          border: 5px solid #ffff; }
+        html .main .container-nosotros .imagen {
+          display: flex;
+          justify-items: center;
+          align-items: center; }
+        html .main .container-nosotros .imagen2 {
+          display: flex;
+          justify-items: center;
+          align-items: center; }
       html .main .container-contacto {
         grid-column: 1/5;
         grid-row: 2/3;
@@ -271,21 +279,18 @@
           background: grey; }
       html .main .container-index {
         grid-column: 1/5;
-        grid-row: 2/3; }
-      html .main .container-index,
-      html .main .imagen {
+        grid-row: 2/3;
         font-family: "Teko", sans-serif;
         padding: 12px;
         margin: 12px; }
-      html .main .logo-sch-2 {
-        border-radius: 50%;
-        border: 5px solid #ffff; }
-      html .main .imagen {
-        grid-column: 4/5;
-        grid-row: 3/4;
-        display: flex;
-        justify-items: center;
-        align-items: center; }
+      html .main #carouselExampleIndicators {
+        grid-column: 2/4;
+        grid-row: 3/4; }
+      html .main .carousel .carousel-item {
+        max-height: 300px; }
+      html .main .carousel-item img {
+        object-fit: cover;
+        max-height: 300px; }
       html .main .container-servicios {
         grid-column: 1/5;
         grid-row: 2/4;
@@ -308,6 +313,17 @@
         padding: 12px;
         margin: 12px;
         font-family: "Teko", sans-serif; }
+        html .main .container-nosotros .logo-sch-2 {
+          border-radius: 50%;
+          border: 5px solid #ffff; }
+        html .main .container-nosotros .imagen {
+          display: flex;
+          justify-items: center;
+          align-items: center; }
+        html .main .container-nosotros .imagen2 {
+          display: flex;
+          justify-items: center;
+          align-items: center; }
       html .main .container-contacto {
         grid-column: 1/5;
         grid-row: 2/3;

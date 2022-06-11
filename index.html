@@ -7,9 +7,15 @@
       name="description"
       content="Taller de mecanica integral en Lomas del Mirador, 60 años de experiencia nos avala, atencion personalizada via chat"
     />
-    <meta name="keywords" content="Taller Mecanico, Mecanica Integral, Distribuciones-Embragues, Inyección, Diagnostico" />
+    <meta
+      name="keywords"
+      content="Taller Mecanico, Mecanica Integral, Distribuciones-Embragues, Inyección, Diagnostico"
+    />
+    <meta property="og:title" content="SCH" />
+    <meta property="og:site_name" content="SCH Mecanica Integral" />
+    <meta property="og:type" content="website" />
     <title>SCH | Mecanica Integral</title>
-    <link rel="shortcut icon" href="./img/SCH-32x32.png" />
+    <link rel="shortcut icon" href="./img/SCH-32x32.webp" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -30,7 +36,7 @@
     <section class="section">
       <header class="logo-container">
         <img
-          src="./img/SCH.jpeg"
+          src="./img/SCH.webp"
           class="logo-sch"
           alt="Logo de SCHmecanica"
           width="90"
@@ -83,16 +89,65 @@
           explicabo architecto?.
         </span>
       </article>
-      <div class="imagen">
-        <img
-          src="./img/SCH.jpeg"
-          class="logo-sch-2"
-          alt="Logo de SCHmecanica"
-          width="45"
-          height="45"
-        />
-        <span>Imagen en breve</span>
+
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/SCH.webp" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="../img/SCH.webp" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="../img/SCH.webp" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+
       <footer class="footer">
         <div class="footer-container">
           <span>Copyright by Martinez Ríos, Alberto Julian</span>
