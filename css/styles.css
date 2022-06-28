@@ -31,58 +31,69 @@
       height: 100vh; }
       html .main .menu-container {
         display: none; }
-      html .main .menu-container-h {
+      html .main .menu-container-hh .menu-container-h {
         margin: 20px; }
-      html .main .menu-container-h input {
+      html .main .menu-container-hh .menu-container-h input {
         display: none; }
-      html .main .menu-container-h input:checked ~ ul {
+      html .main .menu-container-hh .menu-container-h input:checked ~ ul {
         display: block; }
-      html .main .menu-container-h input:checked ~ label {
+      html .main .menu-container-hh .menu-container-h input:checked ~ label {
         background: lightgrey; }
-      html .main .menu-list-h {
+      html .main .menu-container-hh .menu-list-h {
         display: block;
         background: #333;
         margin: 0;
         padding: 10px;
         list-style: none;
-        border-bottom: 1px solid #ffffff;
+        border-bottom: 2px solid #ffffff;
         font-family: "Bebas Neue", cursive; }
-      html .main .menu-list-h:hover {
+      html .main .menu-container-hh .menu-list-h:hover {
         filter: brightness(110%); }
-      html .main .ul-h .menu-list-h a {
+      html .main .menu-container-hh .ul-h .menu-list-h a {
         text-decoration: none;
         color: #ffff; }
-      html .main .ul-h {
+      html .main .menu-container-hh .ul-h {
         position: absolute;
         padding: 0;
         margin: 0 10px;
         width: 200px;
         display: none; }
-      html .main .ul-h .menu-list-h a {
+      html .main .menu-container-hh .ul-h .menu-list-h a {
         text-decoration: none;
         color: #ffff; }
-      html .main .menu-imagen {
+      html .main .menu-container-hh .menu-imagen {
         box-sizing: border-box;
         display: inline-block;
-        border: 1px solid black;
+        border: 1.5px solid black;
         border-radius: 5px;
-        height: 30px;
-        width: 30px;
+        height: 40px;
+        width: 40px;
         line-height: 30px;
         font-weight: bold;
         text-align: center;
         user-select: none; }
-      html .main .menu-imagen:hover {
+      html .main .menu-container-hh .menu-imagen:hover {
         background: grey; }
       html .main .container-index {
-        grid-column: 1/5;
+        grid-column: 2/4;
         grid-row: 2/3;
         font-family: "Teko", sans-serif;
+        font-size: 32px;
         margin: 10px;
-        padding: 10px; }
+        padding: 10px;
+        text-align: center; }
       html .main #carouselExampleIndicators {
         grid-column: 2/4;
         grid-row: 3/4; }
+      html .main .carousel .carousel-item {
+        max-height: 300px; }
+      html .main .carousel-item img {
+        object-fit: cover;
+        max-height: 300px; }
+      html .main #carouselExampleIndicators2 {
+        grid-column: 1/3;
+        grid-row: 2/4;
+        margin: 12px; }
       html .main .carousel .carousel-item {
         max-height: 300px; }
       html .main .carousel-item img {
@@ -93,50 +104,50 @@
         grid-row: 3/4;
         padding: 10px;
         margin: 10px;
-        font-family: "Teko", sans-serif; }
+        font-family: "Teko", sans-serif;
+        font-size: 20px; }
       html .main .container-productos {
         grid-column: 1/5;
         grid-row: 2/3;
         padding: 10px;
         margin: 10px;
         font-family: "Teko", sans-serif; }
-        html .main .container-productos .carrito-compra label {
-          padding: 10px; }
-        html .main .container-productos .carrito-compra .btn {
-          margin: 10px; }
+        html .main .container-productos .carrito-compra {
+          text-align: center; }
+          html .main .container-productos .carrito-compra label {
+            padding: 10px;
+            font-size: 20px; }
+          html .main .container-productos .carrito-compra .btn {
+            margin: 10px; }
       html .main .container-nosotros {
-        grid-column: 1/5;
+        grid-column: 3/5;
         grid-row: 2/4;
         padding: 12px;
         margin: 12px;
-        font-family: "Teko", sans-serif; }
-        html .main .container-nosotros .logo-sch-2 {
-          border-radius: 50%;
-          border: 5px solid #ffff; }
-        html .main .container-nosotros .imagen {
-          display: flex;
-          justify-items: center;
-          align-items: center; }
-        html .main .container-nosotros .imagen2 {
-          display: flex;
-          justify-items: center;
-          align-items: center; }
+        font-family: "Teko", sans-serif;
+        font-size: 20px; }
       html .main .container-contacto {
         grid-column: 1/5;
         grid-row: 2/3;
         padding: 10px;
         margin: 10px;
         font-family: "Teko", sans-serif; }
-        html .main .container-contacto .formulario-contacto label {
-          padding: 10px; }
-        html .main .container-contacto .formulario-contacto .btn {
-          margin: 10px; }
+        html .main .container-contacto .formulario-contacto {
+          text-align: center; }
+          html .main .container-contacto .formulario-contacto label {
+            padding: 10px;
+            font-size: 20px; }
+          html .main .container-contacto .formulario-contacto .btn {
+            margin: 10px; }
       html .main .lista-contacto {
         grid-column: 1/5;
         grid-row: 3/4;
         padding: 12px;
         margin: 12px;
         font-family: "Teko", sans-serif; }
+        html .main .lista-contacto .lista-contacto,
+        html .main .lista-contacto h2 {
+          text-align: center; }
         html .main .lista-contacto .redes-sociales {
           display: flex;
           justify-content: space-around;
@@ -171,12 +182,12 @@
       bottom: 0;
       width: 100%;
       position: absolute;
-      padding: 10px 0;
+      padding: 6px 0;
       background-color: #333;
       font-family: "Bebas Neue", cursive; }
       html .footer .footer-container {
         color: #ffff;
-        font-size: 1, 5rem;
+        font-size: 1rem;
         text-align: center; } }
 
 @media screen and (min-width: 992px) and (max-width: 1400px) {
@@ -235,15 +246,15 @@
           color: #ffff; }
         html .main .menu-container .menu-list .menu-list-item:hover {
           background-color: #ec6c2c; }
-      html .main .menu-container-h {
+      html .main .menu-container-hh .menu-container-h {
         display: none; }
-        html .main .menu-container-h .menu-container-h input {
+        html .main .menu-container-hh .menu-container-h .menu-container-h input {
           display: none; }
-        html .main .menu-container-h .menu-container-h input:checked ~ ul {
+        html .main .menu-container-hh .menu-container-h .menu-container-h input:checked ~ ul {
           display: block; }
-        html .main .menu-container-h .menu-container-h input:checked ~ label {
+        html .main .menu-container-hh .menu-container-h .menu-container-h input:checked ~ label {
           background: lightgrey; }
-        html .main .menu-container-h .menu-list-h {
+        html .main .menu-container-hh .menu-container-h .menu-list-h {
           display: block;
           background: #333;
           margin: 0;
@@ -251,20 +262,20 @@
           list-style: none;
           border-bottom: 1px solid #ffffff;
           font-family: "Bebas Neue", cursive; }
-        html .main .menu-container-h .menu-list-h:hover {
+        html .main .menu-container-hh .menu-container-h .menu-list-h:hover {
           filter: brightness(110%); }
-        html .main .menu-container-h .ul-h .menu-list-h a {
+        html .main .menu-container-hh .menu-container-h .ul-h .menu-list-h a {
           text-decoration: none;
           color: #ffffff; }
-        html .main .menu-container-h .ul-h {
+        html .main .menu-container-hh .menu-container-h .ul-h {
           position: absolute;
           padding: 0;
           width: 200px;
           display: none; }
-        html .main .menu-container-h .ul-h .menu-list-h a {
+        html .main .menu-container-hh .menu-container-h .ul-h .menu-list-h a {
           text-decoration: none;
           color: #ffffff; }
-        html .main .menu-container-h .menu-imagen {
+        html .main .menu-container-hh .menu-container-h .menu-imagen {
           box-sizing: border-box;
           display: inline-block;
           border: 1px solid black;
@@ -275,71 +286,77 @@
           font-weight: bold;
           text-align: center;
           user-select: none; }
-        html .main .menu-container-h .menu-imagen:hover {
+        html .main .menu-container-hh .menu-container-h .menu-imagen:hover {
           background: grey; }
       html .main .container-index {
-        grid-column: 1/5;
+        grid-column: 2/4;
         grid-row: 2/3;
         font-family: "Teko", sans-serif;
+        font-size: 32px;
         padding: 12px;
-        margin: 12px; }
+        margin: 12px;
+        text-align: center; }
       html .main #carouselExampleIndicators {
         grid-column: 2/4;
         grid-row: 3/4; }
+      html .main #carouselExampleIndicators2 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+        margin: 12px; }
       html .main .carousel .carousel-item {
-        max-height: 300px; }
+        max-height: 350px; }
       html .main .carousel-item img {
         object-fit: cover;
-        max-height: 300px; }
+        max-height: 350px; }
       html .main .container-servicios {
         grid-column: 1/5;
-        grid-row: 2/4;
+        grid-row: 2/3;
         padding: 12px;
         margin: 12px;
-        font-family: "Teko", sans-serif; }
+        font-family: "Teko", sans-serif;
+        font-size: 20px; }
       html .main .container-productos {
         grid-column: 1/5;
-        grid-row: 2/4;
+        grid-row: 2/3;
         padding: 12px;
         margin: 12px;
         font-family: "Teko", sans-serif; }
-        html .main .container-productos .carrito-compra label {
-          padding: 12px; }
-        html .main .container-productos .carrito-compra .btn {
-          margin: 12px; }
+        html .main .container-productos .carrito-compra {
+          text-align: center; }
+          html .main .container-productos .carrito-compra label {
+            padding: 12px;
+            font-size: 20px; }
+          html .main .container-productos .carrito-compra .btn {
+            margin: 12px; }
       html .main .container-nosotros {
-        grid-column: 1/5;
-        grid-row: 2/4;
+        grid-column: 3/5;
+        grid-row: 3/4;
         padding: 12px;
         margin: 12px;
-        font-family: "Teko", sans-serif; }
-        html .main .container-nosotros .logo-sch-2 {
-          border-radius: 50%;
-          border: 5px solid #ffff; }
-        html .main .container-nosotros .imagen {
-          display: flex;
-          justify-items: center;
-          align-items: center; }
-        html .main .container-nosotros .imagen2 {
-          display: flex;
-          justify-items: center;
-          align-items: center; }
+        font-family: "Teko", sans-serif;
+        font-size: 20px; }
       html .main .container-contacto {
         grid-column: 1/5;
         grid-row: 2/3;
         padding: 12px;
         margin: 12px;
         font-family: "Teko", sans-serif; }
-        html .main .container-contacto .formulario-contacto label {
-          padding: 12px; }
-        html .main .container-contacto .formulario-contacto .btn {
-          margin: 12px; }
+        html .main .container-contacto .formulario-contacto {
+          text-align: center; }
+          html .main .container-contacto .formulario-contacto label {
+            padding: 12px;
+            font-size: 20px; }
+          html .main .container-contacto .formulario-contacto .btn {
+            margin: 12px; }
       html .main .lista-contacto {
         grid-column: 1/5;
         grid-row: 3/4;
         padding: 12px;
         margin: 12px;
         font-family: "Teko", sans-serif; }
+        html .main .lista-contacto .lista-contacto,
+        html .main .lista-contacto h2 {
+          text-align: center; }
         html .main .lista-contacto .redes-sociales {
           display: flex;
           justify-content: space-around;
@@ -374,10 +391,10 @@
       bottom: 0;
       width: 100%;
       position: absolute;
-      padding: 10px 0;
+      padding: 6px 0;
       background-color: #333;
       font-family: "Bebas Neue", cursive; }
       html .footer .footer-container {
         color: #ffff;
-        font-size: 1, 5rem;
+        font-size: 1rem;
         text-align: center; } }

@@ -50,9 +50,6 @@
           <li class="menu-list-item">
             <a class="" href="servicios.html">SERVICIOS</a>
           </li>
-          <!-- <li class="menu-list-item">
-          <a class="">PRODUCTOS</a>
-        </li> -->
           <li class="menu-list-item">
             <a class="" href="nosotros.html">NOSOTROS</a>
           </li>
@@ -61,10 +58,12 @@
           </li>
         </ul>
       </nav>
-
+    <div class="menu-container-hh">
       <nav class="menu-container-h">
         <input type="checkbox" id="menu-h" />
-        <label class="menu-imagen" for="menu-h"> ☰ </label>
+        <label class="menu-imagen" for="menu-h">
+          <img src="../img/menu-hamburguesa.webp" alt="" />
+        </label>
         <ul class="ul-h">
           <li class="menu-list-h">
             <a class="" href="../index.html">INICIO</a>
@@ -72,9 +71,6 @@
           <li class="menu-list-h">
             <a class="" href="./servicios.html">SERVICIOS</a>
           </li>
-          <!-- <li class="menu-list-h">
-            <a class="" href="./productos.html">PRODUCTOS</a>
-          </li> -->
           <li class="menu-list-h">
             <a class="" href="./nosotros.html">NOSOTROS</a>
           </li>
@@ -83,7 +79,7 @@
           </li>
         </ul>
       </nav>
-
+    </div>
       <div class="container-productos">
         <div class="titulo">
           <h2>PRODUCTOS</h2>
@@ -91,24 +87,28 @@
         <table class="table table-dark table-hover">
           <tr>
             <th>Productos</th>
-            <td>Gorras</td>
-            <td>Stickers</td>
-            <td>Remeras</td>
-            <td>Tazas</td>
-          </tr>
-          <tr>
-            <th>Precio</th>
-            <td>100$</td>
-            <td>200$</td>
-            <td>300$</td>
-            <td>400$</td>
-          </tr>
-          <tr>
             <th>Tamaños</th>
-            <td>S</td>
+            <th>Precio</th>
+          </tr>
+          <tr> 
+           <td>Gorras</td>
+           <td>S</td>
+           <td>100$</td>
+          </tr>
+          <tr>
+            <td>Stickers</td>
             <td>M</td>
+            <td>300$</td>   
+          </tr>
+          <tr>
+            <td>Remeras</td>
             <td>L</td>
+            <td>200$</td>
+          </tr>
+          <tr>
+            <td>Tazas</td>
             <td>XL</td>
+            <td>400$</td>
           </tr>
         </table>
 
@@ -138,19 +138,16 @@
               <option value="precio300">300$</option>
               <option value="precio400">400$</option>
             </select>
-            <!-- <input class="boton" type="submit" value="Comprar" /> -->
+            
             <button class="btn btn-dark btn-block">Aceptar</button>
-            <!-- <div class="contenedor-botones">
-              <button class="boton cuatro"><span>Aceptar</span></button>
-          </form> -->
         </div>
       </div>
-      <footer class="footer">
-        <div class="footer-container">
-          <span>Copyright by Martinez Ríos, Alberto Julian</span>
-        </div>
-      </footer>
     </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <span>Copyright by Martinez Ríos, Alberto Julian</span>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
